@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <meta charset="UTF-8">
+
+
+	<title>My First HTML5 Form</title>
+
+	<link rel="stylesheet" href="style.css" />
+	
+</head>
+
+
+<body ng-controller>
+
+<div class="wrap">
+
+<form class="formWrap">
+
+	<label for="fname">First Name *:</label>
+	<input type="text" id="fname" name="fname" placeholder="Enter Your First Name" required/>
+
+	<label for="lname">Last Name :</label>
+	<input type="text" id="lname" name="lname" placeholder="Enter Your Last Name" required/>
+
+	<label for="email">Email *:</label>
+	<input type="email" id="email" name="email" placeholder="Enter Your Email ID" required pattern="^\S+@\S+\.\S+$" title="example@mail.com" required/>
+
+	<label for="pass">Password *:</label>
+	<input type="password" id="pass" name="pass" placeholder="Enter Password" required/>
+
+	<label for="rpass">Retype Password *:</label>
+	<input type="password" id="rpass" name="rpass" placeholder="Confirm Password"  required />
+
+	<div class="gender">
+	
+	<input type="radio" id="male" class="radio" name="gender" value="none" checked />
+	<label for="male">Male</label>
+
+	<input type="radio" id="female" class="radio"  name="gender" value="none" />
+	<label for="female">Female</label>
+
+	</div>
+	<label for="age">Age :</label>
+	<input type="number" id="age" name="age" size="6" min="17" max="99" value="17" />
+
+	<label for="country">Country :</label>
+	<input type="text" id="country" name="country" list="place" placeholder="Enter Your Country" >
+	<datalist id ="place">	
+	<option>Africa</option>
+	<option>Canada</option>
+	<option>Japan</option>
+	<option>India</option>
+	<option>UK</option>
+	<option>USA</option>
+	</datalist>
+	
+	
+	<input value="Sign up" type="submit" />
+</form>
+
+</div>
+
+</body>
+</html> 
